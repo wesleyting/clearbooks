@@ -42,7 +42,8 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 400px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -331,17 +332,17 @@ a {
 }
 
 .button._404.contact {
-  width: 45%;
+  width: 150px;
   margin-top: 0px;
   margin-right: 0px;
-  margin-left: 0px;
+  margin-left: 18px;
   padding: 18px;
 }
 
 .button._404.go-back {
-  width: 45%;
+  width: 150px;
   margin-top: 0px;
-  margin-right: 0px;
+  margin-right: 18px;
   margin-left: 0px;
   padding: 18px;
   background-color: #000b49;
@@ -2181,6 +2182,8 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -2208,6 +2211,13 @@ a {
 
 .image-5 {
   margin-bottom: -16px;
+}
+
+.image-5.success {
+  width: 36px;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
 }
 
 .search-container {
@@ -3434,6 +3444,26 @@ a {
   margin-bottom: 36px;
   margin-left: auto;
   text-align: center;
+}
+
+.container-4 {
+  height: 30rem;
+}
+
+.success-container {
+  max-width: 600px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.paragraph-5 {
+  margin-top: 1rem;
+}
+
+.div-block {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 1280px) {
