@@ -170,25 +170,35 @@
     <div class="pricing-contact-form w-container">
       <h1 class="page-heading">Get a Free Quote</h1>
       <div class="form-block pricing w-form">
-        <form name="contact" method="POST" data-netlify="true" action="/success">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-          <p>
-            <label>Your Role: <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+        <form id="email-form" name="email-form" data-name="Email Form" action="/success" method="post" data-netlify="true" class="form pricing">
+          <div class="name-and-email-wrap">
+            <div class="name-container"><label for="Name" class="field-label">Name *</label><input type="text" class="contact-form-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="" id="Name" required=""></div>
+            <div class="email-container"><label for="Email">Email *</label><input type="email" class="contact-form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email" required=""></div>
+          </div>
+          <div class="contact-form-div"><label for="Company-Name-2" class="contact-form-label">Company Name*</label><input type="text" class="contact-form-field w-input" maxlength="256" name="Company-Name" data-name="Company Name" placeholder="" id="Company-Name-2" required=""></div>
+          <div class="contact-form-div"><label for="field-5" class="contact-form-label">Industry *</label><select id="Industry" name="Industry" data-name="Industry" required="" class="contact-form-field w-select">
+              <option value="">Select one...</option>
+              <option value="eCommerce">eCommerce</option>
+              <option value="Food &amp; Beverage">Food &amp; Beverage</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Manufacturing">Manufacturing</option>
+              <option value="Non-profit Organization">Non-profit Organization</option>
+              <option value="Real Estate">Real Estate</option>
+              <option value="Retail">Retail</option>
+              <option value="Technology">Technology</option>
+              <option value="Travel">Travel</option>
+              <option value="Others">Others</option>
+            </select></div>
+          <div class="contact-form-div"><label for="Monthly-Budget" class="contact-form-label">Monthly Budget for Accounting Services.</label><select id="Monthly-Budget" name="Monthly-Budget" data-name="Monthly Budget" class="contact-form-field w-select">
+              <option value="">Select one...</option>
+              <option value="Not Sure">Not Sure</option>
+              <option value="$0 - $500">$0 - $500</option>
+              <option value="$500 - $1000">$500 - $1000</option>
+              <option value="$1000 - $2000">$1000 - $2000</option>
+              <option value="$2000 - $3000">$2000 - $3000</option>
+              <option value="&gt;$3000">&gt;$3000</option>
+            </select></div>
+          <div class="contact-form-div"><label for="Additional-Details" class="contact-form-label">Share any additional details with us.</label><textarea id="Additional-Details" name="Additional-Details" maxlength="5000" data-name="Additional Details" placeholder="" class="contact-form-field message-field w-input"></textarea><input type="submit" data-wait="Please wait..." value="Submit" class="submit-button w-button"></div>
         </form>
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
