@@ -748,7 +748,7 @@ a {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 18px;
+  padding-top: 32px;
   padding-bottom: 92px;
   background-color: transparent;
 }
@@ -985,7 +985,7 @@ a {
 }
 
 .testimonials-slider-container {
-  display: none;
+  display: block;
   padding-top: 52px;
   padding-bottom: 52px;
   background-color: transparent;
